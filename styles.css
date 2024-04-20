@@ -1,0 +1,115 @@
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #15202B;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #15202B;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #38444D;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #0c7abf; 
+}
+
+#searchBar {
+    width: 200px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: #1DA1F2; 
+    border: none;
+    color: #FFFFFF;
+    border-radius: 15px; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #15202B;
+}
+
+#postsContainer {
+    width: 40%;
+    background-color: #192734;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.post {
+    border: 1px solid #38444D;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #192734;
+}
+
+.post-username {
+    font-size: 1.2em;
+    color: #1DA1F2; /* Twitter's blue color */
+    margin-bottom: 10px;
+}
+
+.post-text {
+    margin-top: 20px;
+}
+
+.post-date {
+    font-size: 0.8em;
+    color: #8899A6;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.like-button, .repost-button, .share-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
+
+.like-button:hover, .repost-button:hover, .share-button:hover {
+    background-color: #0c7abf;
+}
+
+#searchBar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFF;
+    opacity: 1; /* Firefox */
+}
+
+#searchBar:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #FFFFFF;
+}
+
+#searchBar::-ms-input-placeholder { /* Microsoft Edge */
+    color: #FFFFFF;
+}
