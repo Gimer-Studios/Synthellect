@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const postsContainer = document.getElementById('postsContainer');
     const searchBar = document.getElementById('searchBar');
 
-    fetch('http://sql.gimerstudios.com:3000/posts')
+    fetch('https://sql.gimerstudios.com:3000/posts')
         .then(response => response.json())
         .then(posts => {
             posts.reverse();
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     shareButton.textContent = 'Share';
                     shareButton.className = 'share-button';
                     shareButton.addEventListener('click', () => {
-                        navigator.clipboard.writeText('http://tweeter.gimerstudios.com');
+                        navigator.clipboard.writeText('https://synthellect.gimerstudios.com');
                         alert('Link copied to clipboard!');
                     });
 
